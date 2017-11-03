@@ -1,21 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { StackNavigator } from "react-navigation";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+import HomeScreen from "./src/containers/HomeScreen";
+import ProfileScreen from "./src/containers/ProfileScreen";
+import AboutScreen from "./src/containers/AboutScreen";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const App = StackNavigator(
+  {
+    Home: { screen: HomeScreen },
+    Profile: { screen: ProfileScreen },
+    About: { screen: AboutScreen }
   },
-});
+  {
+    headerMode: "none",
+    mode: "modal",
+    navigationOptions: {
+      gesturesEnabled: false
+    }
+  }
+);
+
+export default App;
