@@ -32,16 +32,32 @@ class AboutScreen extends React.Component {
             <Image
               source={{
                 uri:
-                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img1.jpg?raw=true"
+                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img4.jpg?raw=true"
+              }}
+            />
+          </View>
+          <View style={styles.col}>
+            <Image
+              source={{
+                uri:
+                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img5.jpg?raw=true"
+              }}
+            />
+            <Image
+              source={{
+                uri:
+                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img6.jpg?raw=true"
               }}
             />
           </View>
           <View style={styles.col}>
             <Text style={styles.mediumText}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-              excepturi repellat aliquam ratione adipisci quam! Temporibus
-              dolores quas accusantium explicabo, vero modi cupiditate nam
-              dolorem fugiat! Amet odit dicta est.
+              "Nowadays,Technology become to our life such as AI, Internet of
+              Thing, Chatbot, Blockchain and Machine Learning. Thailand have a
+              lot of problems that we can solve by bring technology, for
+              instance,Queq,Clam Di, Freshket, Piggipo and Planforfit. All of
+              this, we call Startup. We can change present better if we want to
+              do it."
             </Text>
           </View>
         </View>
