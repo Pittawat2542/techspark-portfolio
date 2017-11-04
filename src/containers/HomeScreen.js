@@ -1,14 +1,22 @@
 import React from "react";
-import { StyleSheet, View, Text, Button } from "react-native";
+import { StyleSheet, View, Text, Button, Image } from "react-native";
 
 class HomeScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Text>Hello World Home</Text>
+        <Text style={{ fontSize: 48 }}>PORTFOLIO</Text>
+        <Text style={{ fontSize: 35 }}>by Krerkthad</Text>
+        <Image
+          style={{ width: 340, height: 300 }}
+          source={{
+            uri:
+              "https://raw.githubusercontent.com/Pittawat2542/techspark-portfolio/master/src/images/image.png"
+          }}
+        />
         <Button
-          title="Click"
+          title="START"
           onPress={() => {
             navigate("Profile");
           }}
@@ -21,7 +29,10 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 40
+    backgroundColor: "#f0f0f0",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 30
   }
 });
 
