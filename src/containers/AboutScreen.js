@@ -29,6 +29,14 @@ class AboutScreen extends React.Component {
             </Text>
           </View>
           <View style={styles.col}>
+            <Image
+              source={{
+                uri:
+                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img1.jpg?raw=true"
+              }}
+            />
+          </View>
+          <View style={styles.col}>
             <Text style={styles.mediumText}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
               excepturi repellat aliquam ratione adipisci quam! Temporibus
