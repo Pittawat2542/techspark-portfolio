@@ -31,7 +31,7 @@ class ProfileScreen extends React.Component {
             navigate("About");
           }}
         >
-          Slide to next page &lt;
+          &gt; See More &lt;
         </Text>
       </View>
     );
