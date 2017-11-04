@@ -7,7 +7,7 @@ class AboutScreen extends React.Component {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <Text style={styles.largeText}>About Me</Text>
+          <Text style={styles.xlargeText}>About Me</Text>
           <View style={styles.col}>
             <Image
               style={{
@@ -30,23 +30,38 @@ class AboutScreen extends React.Component {
           </View>
           <View style={styles.col}>
             <Image
+              style={{
+                height: 200,
+                width: 300,
+                marginBottom: 10
+              }}
               source={{
                 uri:
-                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img4.jpg?raw=true"
+                  "https://raw.githubusercontent.com/Pittawat2542/techspark-portfolio/master/src/images/img4.jpg"
               }}
             />
           </View>
           <View style={styles.col}>
             <Image
+              style={{
+                height: 150,
+                width: 150,
+                marginBottom: 15
+              }}
               source={{
                 uri:
-                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img5.jpg?raw=true"
+                  "https://raw.githubusercontent.com/Pittawat2542/techspark-portfolio/master/src/images/img5.jpg"
               }}
             />
             <Image
+              style={{
+                height: 150,
+                width: 150,
+                marginBottom: 15
+              }}
               source={{
                 uri:
-                  "https://github.com/Pittawat2542/techspark-portfolio/blob/master/src/images/img6.jpg?raw=true"
+                  "https://raw.githubusercontent.com/Pittawat2542/techspark-portfolio/master/src/images/img6.jpg"
               }}
             />
           </View>
@@ -74,9 +89,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 30
   },
-  largeText: {
+  xlargeText: {
     color: "white",
     fontSize: 36,
+    paddingTop: 10,
+    paddingBottom: 10
+  },
+  largeText: {
+    color: "white",
+    fontSize: 24,
     paddingTop: 10,
     paddingBottom: 10
   },

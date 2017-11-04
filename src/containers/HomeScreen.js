@@ -1,5 +1,12 @@
 import React from "react";
-import { StyleSheet, View, Text, Button, Image } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  Button,
+  Image,
+  TouchableNativeFeedback
+} from "react-native";
 
 class HomeScreen extends React.Component {
   render() {
